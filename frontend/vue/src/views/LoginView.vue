@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #login-page {
   background-image: url('https://cdn.pixabay.com/photo/2015/09/04/23/22/facebook-923828_1280.jpg');
   background-size: cover;
