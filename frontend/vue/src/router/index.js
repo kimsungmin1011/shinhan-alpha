@@ -1,16 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import IndexView from '../views/IndexView.vue'
+import MenuView from '../views/MenuView.vue'
 import LoginView from '../views/LoginView.vue'
 import SignupView from '../views/SignupView.vue'
-import CartView from '../views/CartView.vue'
-import CartOrderView from '../views/CartOrderView.vue'
 import CreateView from '../views/CreateView.vue'
+import CartView from '../views/CartView.vue'
+import SearchView from '../views/SearchView.vue'
+import CartOrder from '../views/CartOrderView.vue'
+import AppView from '../views/App.vue'
+
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'index',
+    component: IndexView
+  },
+  {
+    path: '/menu',
+    name: 'menu',
+    component: MenuView
   },
   {
     path: '/login',
@@ -23,6 +32,11 @@ const routes = [
     component: SignupView
   },
   {
+    path: '/create',
+    name: 'create',
+    component: CreateView
+  },
+  {
     path: '/cart',
     name: 'cart',
     component: CartView
@@ -30,12 +44,17 @@ const routes = [
   {
     path: '/cartorder',
     name: 'cartorder',
-    component: CartOrderView
+    component: CartOrder
   },
   {
-    path: '/create',
-    name: 'create',
-    component: CreateView
+    path: '/search',
+    name: 'search',
+    component: SearchView
+  },
+  {
+    path: '/app',
+    name: 'app',
+    component: AppView
   },
 ]
 
